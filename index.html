@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/38e55147a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="info-container">
+     <h1>
+         <span id="city">
+             Santiago
+        </span>
+        <span>
+          <button
+            type="button"
+            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+          ></button>
+        </span>
+    </h1>
+      <h2 id="date">
+      </h2>     
+    <form id ="search-form">
+        <input type="search" id="city-input" placeholder="Enter a city" autocomplete="off">
+        <input type="submit">
+    </form>
+   <h3>
+       <span id="temperature">13</span>
+       <span class="units">
+        <a href="#" id="celsius-link">°C</a> 
+           |
+        <a href="#" id="fahrenheit-link">°F</a>
+       </span>
+   </h3> 
+   <p>
+       Humidity = <span id="humidity">4</span>%
+   </p>
+   <p>
+       Wind = <span id= "wind">4 </span> km/h
+   </p>
+   <p id = "temperature-description">
+       Cloudy
+   </p>
+   <div class="d-flex justify-content-center weather-today">
+   <i class="fas fa-cloud"></i>
+   </div>
+   <br />
+    <div class="d-flex justify-content-center container">
+        <div class="row row-cols-auto">
+            <div class="col">
+                <div>20/6</div>
+                <div><i class="d-flex justify-content-center far fa-sun"></i></div>
+                <div>Sat</div>
+            </div>
+            <div class="col">
+                <div>18/7</div>
+                <div><i class="d-flex justify-content-center fas fa-cloud-sun"></i></div>
+                <div>Sun</div>
+            </div>
+            <div class="col">
+                <div>14/4</div>
+                <div><i class="d-flex justify-content-center fas fa-cloud-showers-heavy"></i></div>
+                <div>Mon</div>
+            </div>
+            <div class="col">
+                <div>17/4</div>
+                <div><i class="d-flex justify-content-center fas fa-cloud-sun"></i></div>
+                <div>Tue</div>
+            </div>
+            <div class="col">
+                <div>21/7</div>
+                <div><i class="d-flex justify-content-center far fa-sun"></i></div>
+                <div>Wen</div>
+            </div>  
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

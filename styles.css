@@ -1,0 +1,68 @@
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+button{
+    display: inline;
+}
+form{
+    display: block;
+    text-align: center;
+}
+h2 {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3{
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px;
+}
+p{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.dropdown-toggle {
+  border: none;
+}
+.units{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    top: -20px;
+    position: relative;
+}
+.search-box{
+font-size: 20px;
+}
+
+
+.weather-today {
+    display: inline-block;
+    max-width: 100%;
+    color: ghostwhite;
+    font-size: 40px;
+    
+    
+}
+.info-container{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+       border-radius: 4px;
+       max-width: 800px;
+       margin: 0px auto;
+       opacity: 1;
+       padding: 30px 30px;
+}
