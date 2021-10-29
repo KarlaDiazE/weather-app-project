@@ -29,7 +29,7 @@ function showTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = `${temperature}`;
   let description = document.querySelector("#temperature-description");
-  description.innerHTML = response.data.weather[0].main;
+  description.innerHTML = response.data.weather[0].description;
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.main.humidity;
   let windSpeed = document.querySelector("#wind");

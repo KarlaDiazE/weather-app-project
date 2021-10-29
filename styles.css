@@ -33,6 +33,7 @@ p{
 a{
     color: white;
     text-decoration: none;
+    cursor: default;
 }
 .dropdown-toggle {
   border: none;
@@ -65,4 +66,8 @@ font-size: 20px;
        margin: 0px auto;
        opacity: 1;
        padding: 30px 30px;
+}
+
+.weather-description {
+    text-transform: capitalize;
 }
