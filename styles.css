@@ -3,72 +3,75 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 h1{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 300;
-    text-align: center;
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 15px;
 }
-button{
-    display: inline;
-}
+
 form{
     display: block;
     text-align: center;
+    padding: 30px;
 }
 h2 {
     font-size: 15px;
     font-weight: 300;
-    text-align: center;
+    text-align: left;
+    padding-left: 15px;
 }
 
 h3{
-    font-size: 50px;
+    font-size: 80px;
     font-weight: 300;
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    padding: 5px;
 }
 p{
-    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 15px;
 }
 a{
     text-decoration: none;
 }
 
-.dropdown-toggle {
-  border: none;
+.info-container{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    border-radius: 4px;
+    max-width: 700px;
+    margin: 0px auto;
+    margin-top: 30px;
+    opacity: 1;
+    padding: 30px 30px;
 }
-.units{
-    
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-    top: -20px;
-    position: relative;
-    
-}
+
 .search-box{
 font-size: 20px;
 }
 
-
-.weather-today {
-    display: inline-block;
-    max-width: 100%;
-    color: ghostwhite;
-    font-size: 40px;
-    
-    
-}
-.info-container{
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-       border-radius: 4px;
-       max-width: 800px;
-       margin: 0px auto;
-       opacity: 1;
-       padding: 30px 30px;
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;    
 }
 
 .weather-description {
     text-transform: capitalize;
+    font-size: 15px;
+    text-align: center;
+    padding: 0px;
+}
+
+.units{    
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    top: -40px;
+    position: relative;
 }
 
 .active {
@@ -77,5 +80,13 @@ font-size: 20px;
 }
 
 .active:hover{
-    color: ghostwhite;;
+    color: ghostwhite;
+}
+
+.repository{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 20px;
 }

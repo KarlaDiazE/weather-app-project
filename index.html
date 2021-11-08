@@ -15,69 +15,81 @@
 </head>
 <body>
     <div class="info-container">
-     <h1>
-         <span id="city">
-             Santiago
-        </span>
-
-    </h1>
-      <h2 id="date">
-      </h2>     
-    <form id ="search-form">
-        <input type="search" id="city-input" placeholder="Enter a city" autocomplete="off">
-        <input type="submit">
-    </form>
-   <h3>
-       <span id="temperature"></span>
-       <span class="units">
-        <a href="#" id="celsius-link" class="active">°C</a> 
-           |
-        <a href="#" id="fahrenheit-link">°F</a>
-       </span>
-   </h3> 
-   <p>
-       Humidity = <span id="humidity">4</span>%
-   </p>
-   <p>
-       Wind = <span id= "wind">4 </span> km/h
-   </p>
-   <p class = "weather-description" id = "temperature-description">
-       
-   </p>
-   <div class="d-flex justify-content-center weather-today">
-   <img class="" id="todaysIcon" src = ""></img>
-   </div>
+        <form id ="search-form">
+        <div class="row">
+            <div class="col-9">
+                <input type="search" id="city-input" placeholder="Type a city" class="form-control" autocomplete="off" />
+            </div> 
+            <div class="col-3">
+            <input type="submit" value="Search" class="btn btn-primary"/>
+            </div>
+        </div>
+        </form>
+    <div class="row">
+        <div class="col-5">
+            <h1>
+                <span id="city">
+                    Santiago
+               </span>
+           </h1>
+             <h2>
+                 Last updated: <span id="date"></span>
+             </h2>     
+             <p>
+                 Humidity: <span id="humidity">4</span>%, 
+                 Wind: <span id= "wind">4 </span> km/h
+             </p>
+        </div>
+        <div class="col-3">
+            <div class="wrapper"> 
+                <img class="weather-today" id="todaysIcon" src = ""></img>
+            </div>
+            <p class = "weather-description" id = "temperature-description">    
+            </p>
+        </div>
+        <div class="col-4">
+            <h3>
+                <span id="temperature"></span>
+                <span class="units">
+                    <a href="#" id="celsius-link" class="active">°C</a> 
+                    |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+            </h3> 
+        </div>
+    </div>
    <br />
-    <div class="d-flex justify-content-center container">
-        <div class="row row-cols-auto">
-            <div class="col">
+    <div class="weather-forecast">
+        <div class="row">
+            <div class="col-2">
                 <div>20/6</div>
                 <div><i class="d-flex justify-content-center far fa-sun"></i></div>
                 <div>Sat</div>
             </div>
-            <div class="col">
+            <div class="col-2">
                 <div>18/7</div>
                 <div><i class="d-flex justify-content-center fas fa-cloud-sun"></i></div>
                 <div>Sun</div>
             </div>
-            <div class="col">
+            <div class="col-2">
                 <div>14/4</div>
                 <div><i class="d-flex justify-content-center fas fa-cloud-showers-heavy"></i></div>
                 <div>Mon</div>
             </div>
-            <div class="col">
+            <div class="col-2">
                 <div>17/4</div>
                 <div><i class="d-flex justify-content-center fas fa-cloud-sun"></i></div>
                 <div>Tue</div>
             </div>
-            <div class="col">
+            <div class="col-2">
                 <div>21/7</div>
                 <div><i class="d-flex justify-content-center far fa-sun"></i></div>
                 <div>Wen</div>
             </div>  
         </div>
         </div> 
-        <div> 
+        <br />
+        <div class="repository"> 
         <small><a href="https://github.com/KarlaDiazE/weather-app-project" target="_blank">Open-source code</a> by Karla Díaz</small>
         </div>
     </div>
